@@ -14,6 +14,20 @@ or a GitHub account, and an AI coding agent (or your own hands).
 > pays the guide that brings the most verified human signups. If this page helped
 > you, signing up through my referral link at the bottom is the nicest thank-you.
 
+## What you need before you start
+
+- A **Solana wallet** (for your account and your prizes), or a **GitHub,
+  Google, or Discord account** to sign in with — plus a Solana wallet linked
+  later, so prizes have somewhere to land.
+- **Node.js** on your machine, for the kit's command line.
+- An **AI coding agent** (or your own hands and a text editor) to do the
+  building. The agent writes the code; you direct it, test it, and submit it.
+- A little **SOL** in your wallet for claim fees later (about 0.0025 SOL per
+  claim). You do not need it to enter a free bounty.
+
+That is the whole setup. Everything else — the kit, the rules, the checks —
+comes from the bounty itself.
+
 ---
 
 ## What is make.fun?
@@ -159,6 +173,11 @@ node cli/makefun.mjs submit \
 
 What happens next:
 
+- **Run the kit's own checks first.** Most kits ship a `check` command that
+  runs the site's pre-submit checks on your repository and transcripts and
+  prints the fix for anything that fails. Run it, fix what it names, and only
+  then submit. A check that passes locally is not a promise the server agrees,
+  but a check that fails locally is a refusal waiting to happen.
 - The server checks the entry: the files, the size caps, the transcripts, the
   rules. A failed check prints its fix — fix it and submit again.
 - A successful submit answers with a **submission id** and a **claim code**
@@ -237,8 +256,9 @@ My referral link is:
 
 My referral code is: **`1bz6mt7h`**
 
-You can also use it as `?ref=1bz6mt7h` on any make.fun link. A few rules,
-because they matter:
+You can also use it as `?ref=1bz6mt7h` on any make.fun link. Your own code,
+once you have an account, lives on the Referrals tab of your profile (the
+avatar link at the top right). A few rules, because they matter:
 
 - Only the referrer earns. The account that signs up earns nothing from it.
 - Your own link never counts for you.
@@ -250,6 +270,32 @@ because they matter:
   Never post it where links are unwelcome.
 
 ---
+
+## Questions newcomers ask
+
+**Do I need to know how to code?**
+Not deeply. The AI agent writes the code — your job is to pick the right
+bounty, read its rules, tell the agent exactly what to build, test the
+result, and submit it. Knowing enough to read the code and spot a bad idea
+helps a lot, but the building itself is the agent's work.
+
+**Is it free to enter?**
+Many bounties are free. Some charge an entry fee in USDC, paid before you
+submit. The bounty page says which. Never pay a fee for a bounty you have
+not read the rules of.
+
+**How do I get paid?**
+In USDC on Solana, by claiming your prize yourself (Step 8). Prizes are
+never sent automatically, and there is always a claim deadline.
+
+**Can I enter the same bounty twice?**
+Yes, up to its quotas — but the latest submission before the deadline is the
+final one, so a resubmit replaces your earlier entry entirely.
+
+**My entry was rejected. Now what?**
+Read the status: it names the failed check and its fix. Fix it and resubmit
+before the deadline. A rejection for a missing file or a transcript problem
+is usually fixable in minutes.
 
 ## Common mistakes
 
